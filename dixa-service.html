@@ -14,55 +14,81 @@
         <h2>Service request</h2>
 
     <form method="post" action="https://forms.dixa.io/v2/forms/6sPdF6kCkpHMBikHQmBaBp/1UvFy9FdqMTDkDuFGKnHC0" enctype="multipart/form-data" id="supportForm">
-        <label>Request type</label><br> 
-        <select name="subject">
-            <option value="general_inquiry">General inquiry</option>
-            <option value="cancellation_request">Cancellation request</option>
-            <option value="changes_to_booking">Changes to my booking</option>
-            <option value="multicy_stopover">Multicity / Stopover</option>
-            <option value="flight-disruptions">Flight disruptions</option>
-            <option value="complaints">Complaints</option>
-            <option value="assistance">Assistance</option>            
-        </select> <br>
+        <div class="left">
+            <label>Request type</label><br> 
+            <select name="subject" id="subject">
+                <option value="general_inquiry">General inquiry</option>
+                <option value="cancellation_request">Cancellation request</option>
+                <option value="changes_to_booking">Changes to my booking</option>
+                <option value="multicy_stopover">Multicity / Stopover</option>
+                <option value="flight-disruptions">Flight disruptions</option>
+                <option value="complaints">Complaints</option>
+                <option value="assistance">Assistance</option>            
+            </select> <br>
+            
+            <div id="multicity_stopover">
+                <input type="radio" id="stopover" name="type" value="stopover"/>Stopover
+                <input type="radio" id="multicity" name="type" value="multicity"/>Multicity
+            </div>
+
+            <blockquote>NOTE: passengers flying to the US can cancel through myplay</blockquote>
+            
+            <label>Email</label><br>
+            <input type="email" name="email" value="eg@gangverk.is" required> <br>
+            <label>Name</label><br>
+            <input type="text" name="name" value="einar"> <br>
+        <!-- 
+            <label>Subject</label><br>
+            <input type="text" name="subject" value="test"> <br>
+        -->  
+            <label>Description</label><br>
+            <textarea name="description" width="400" height="200" >test</textarea> <br>
+            
+            <label>Phone</label><br>
+            <input type="text" name="phone_e164" value="+3548581884"> <br>
+            
+            <label>Booking number</label><br> 
+            <input type="text" name="booking_number" value="M01234"> <br>
+            
+            <label>Do you have cancel protection</label><br> 
+            <select name="cancel_protection">
+            <option value="YES">Yes</option>
+            <option value="NO">No</option>
+            </select> <br>
+            
+            <label>Is this flight to USA in less than 24 hours</label><br> 
+            <select name="usa_flight_24hrs">
+            <option value="NO">No</option>
+            <option value="YES">Yes</option>    
+            </select> <br>
+            
         
-        <blockquote>NOTE: passengers flying to the US can cancel through myplay</blockquote>
-        
-        <label>Email</label><br>
-    <input type="email" name="email" value="eg@gangverk.is" required> <br>
-        <label>Name</label><br>
-        <input type="text" name="name" value="einar"> <br>
-    <!-- 
-        <label>Subject</label><br>
-        <input type="text" name="subject" value="test"> <br>
-    -->  
-        <label>Description</label><br>
-        <textarea name="description" width="400" height="200" >test</textarea> <br>
-        
-        <label>Phone</label><br>
-    <input type="text" name="phone_e164" value="+3548581884"> <br>
-        
-        <label>Booking number</label><br> 
-        <input type="text" name="booking_number" value="M01234"> <br>
-        
-        <label>Do you have cancel protection</label><br> 
-        <select name="cancel_protection">
-        <option value="cancel_protection_YES">Yes</option>
-        <option value="cancel_protection_NO">No</option>
-        </select> <br>
-        
-        <label>Is this flight to USA in less than 24 hours</label><br> 
-        <select name="usa_flight_24hrs">
-        <option value="usa_flight_24hrs_NO">No</option>
-        <option value="usa_flight_24hrs_YES">Yes</option>    
-        </select> <br>
-        
-        <label>Message</label><br>
-        <textarea name="message" id="resultTextarea"></textarea> <br>
-    
-    <input type="button" id="submitButton" value="Submit">
+            <input type="submit" id="submitButton" value="Submit" >
+        </div>
+        <div class="right">
+            <label>Message</label><br>
+            <textarea name="message" id="resultTextarea" class="large skip"></textarea> <br>    
+        </div>
     </form>
 
-    <script type="text/javascript" src="dixa.js">        
+    <script type="text/javascript" src="dixa.js">
+        /*missing function
+        var e = document.getElementById("subject");
+        var value = e.value;
+        var text = e.options[e.selectedIndex].text;
+        alert(value);
+
+        if(value=="multicy_stopover") {
+            alert("hello");
+            var x = document.getElementById("multicity_stopover");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+        */
 
     </script>
 </body>
