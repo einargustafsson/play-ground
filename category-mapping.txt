@@ -1,0 +1,171 @@
+
+
+Claims
+    Damaged baggage claim
+    Delayed baggage claim
+    Flight claims regarding delayed/cancelled flight/denied boarding
+    My bag hasn't shown up for more than 5 days
+    
+Service
+
+    Ideal categories
+        Changes to my booking -> Changes to my booking
+            passenger details
+                Booking number
+                Type
+                    Name correction
+                    Date of birth                    
+                    Contact info (email/phone)
+                Date of flight
+                    -3 days -> Service request Urgent
+                    +3 days
+                    Flight passed
+                Information text
+            Passenger change
+                * All of the above
+                New passenger info
+                    Current pax name
+                    Name, DOB, Email, Phone                    
+            Add passenger
+                * Same as above
+                Additional services
+                    Add bag
+                    Buy seat
+                    Insurance
+            Date of flight
+                * Same as above
+                New date
+                Apply to all pax Y/N
+                Inbound/Ooutbound only or both
+            Destination of flight
+                * Same as above
+                New destination
+                New date
+                Apply to all pax Y/N
+        Cancel my booking -> Cancel booking
+            Booking #
+            Insurance/Protection Y/N ~ Protection
+            Which flight (inb, outb, both)
+            All pax (Y/N)
+            Email on booking
+            Comments
+            Approve clauses
+        Complaints -> Complaints
+            Type ~
+                Airport experience
+                Baggage allowance
+                Customer service
+                Onboard experience
+                Play website
+                Prices
+                Other
+            Booking#
+            Description
+        Assistance
+            Type
+                Wheelchair
+                Service Dog
+                Visibility impaired
+                hearing impaired
+                mobility device
+                oxygen concentrator
+                Child UMNR
+            Booking number
+            Flight date
+            Details            
+        Multicity / Stopover
+            Type
+                MultiCity
+                    A
+                        Date
+                        Destination A to B
+                    B
+                        Date
+                        Destination C to D
+                    Fare type
+                    Pax names (ALL passenger names and DOB (e.g. Robert Smith 1980-03-28))
+                    Baggage info
+                    Cancel protection
+                    Seat selection and special assistance
+                    Currency
+                StopOver (needs UX design)
+                    A Date + departure
+                    B date + destination
+                    When to stop (in, out, both)
+                    Fare type
+                    Pax names (ALL passenger names and DOB (e.g. Robert Smith 1980-03-28))
+                    Baggage info
+                    Cancel protection
+                    Seat selection and special assistance
+                    Currency
+        Flight disruptions -> Flight Disruptions
+            type ~
+                IRROPS ~ Departing Airport
+                Schedule changes
+            //Needs to be reworked...
+        General inquiries
+            Type ~
+                Online error
+                Invoice
+
+            //Needs to be reworked...
+
+    Current categories
+
+    I need to change passenger details -> Pax detail changes ->
+    General customer service inquiries
+    I am receiving an error
+    I need to cancel my flight
+    I need to cancel my USA flight within 24 hours
+    I need to submit a formal complaint
+    I need to request an invoice for my booking
+    I received a notification of my flight being disrupted
+    I want to book a stopover flight
+    I want to book a multi city flight
+    I want to purchase a PLAY gift card
+    
+    My child/children are travelling on their own and I need to book unaccompanied minor services
+    Rerouting *Only for Aarhus cancellation*
+    Special assistance
+    I want to change the airport that I'm flying from/to
+
+Groups
+    I need a price quote for my group of +12 (at least 12 adults) passengers
+
+
+
+
+
+Baggage
+    Damaged baggage claim
+    Delayed baggage claim
+    My bag hasn't shown up for more than 5 days
+    
+Change request
+    I need to change passenger details
+    I want to change the airport that I'm flying from/to
+
+Cancellations
+    Flight claims regarding delayed/cancelled flight/denied boarding
+    I need to cancel my flight
+    I need to cancel my USA flight within 24 hours
+    
+Assistance
+    My child/children are travelling on their own and I need to book unaccompanied minor services
+    Special assistance
+
+Sales
+    I need a price quote for my group of +12 (at least 12 adults) passengers
+    I want to purchase a PLAY gift card
+    I want to book a stopover flight
+    I want to book a multi city flight
+
+Other
+    General customer service inquiries
+    I am receiving an error
+    I need to submit a formal complaint
+    I need to request an invoice for my booking
+    I received a notification of my flight being disrupted
+    
+
+    
