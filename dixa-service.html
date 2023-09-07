@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-question">
                     <label>Comments</label><br>
-                    <textarea name="General inquiry" width="400" height="200" >test</textarea>
+                    <textarea name="General inquiry" width="400" height="200" ></textarea>
                 </div>
             </fieldset>
 
@@ -55,7 +55,6 @@
             -->
             <fieldset style="display: none;" id="cancellation_request">
                 <legend>Cancellation request</legend>
-                <blockquote>NOTE: passengers flying to the US can cancel through myplay if booking was made less than 24 hours ago</blockquote>
                 
                 <div class="form-question">
                     <label>Booking number</label> 
@@ -86,6 +85,7 @@
                 <div class="form-question">
                     <label>Do you have cancel protection</label>
                     <select name="Cancel protection">
+                        <option value=""> -- </option>
                         <option value="YES">Yes</option>
                         <option value="NO">No</option>
                     </select>
@@ -94,14 +94,17 @@
                 <div class="form-question">
                     <label>Is this flight to the USA and was booked in less than 24 hours</label>
                     <select name="USA flight less than 24hrs">
+                        <option value=""> -- </option>
                         <option value="NO">No</option>
                         <option value="YES">Yes</option>    
                     </select>
                 </div>
+                <blockquote>NOTE: passengers flying to the US can cancel through myplay if booking was made less than 24 hours ago</blockquote>
+                
 
                 <div class="form-question">
                     <label>Comments</label><br>
-                    <textarea name="Cancellation request" width="400" height="200" >test</textarea>
+                    <textarea name="Cancellation request" width="400" height="200" ></textarea>
                 </div>
 
                 <div class="form-question radio">
@@ -117,6 +120,7 @@
                 <div class="form-question">
                     <label>Type of complaint</label>
                     <select name="Type of complaint">
+                        <option value=""> -- </option>
                         <option value="Airport experience">Airport experience</option>
                         <option value="Baggage allowance">Baggage allowance</option>
                         <option value="Customer service">Customer service</option>
@@ -134,7 +138,7 @@
 
                 <div class="form-question">
                     <label>Comments</label><br>
-                    <textarea name="Complaint" width="400" height="200" >test</textarea>
+                    <textarea name="Complaint" width="400" height="200" ></textarea>
                 </div>
             </fieldset>
 
@@ -146,6 +150,7 @@
                 <div class="form-question">
                     <label>Type of change</label>
                     <select name="Type of change">
+                        <option value=""> -- </option>
                         <option value="Passenger details">Passenger details</option>
                         <option value="Passenger change">Passenger change</option>
                         <option value="Add passenger">Add passenger</option>
@@ -169,7 +174,7 @@
 
                 <div class="form-question">
                     <label>Comments</label>
-                    <textarea name="Change description" width="400" height="200" >test</textarea>
+                    <textarea name="Change description" width="400" height="200" ></textarea>
                 </div>
 
             </fieldset>
@@ -182,6 +187,7 @@
                 <div class="form-question">
                     <label>Type of assistance</label>
                     <select name="Type of assistance">
+                        <option value=""> -- </option>
                         <option value="Wheelchair">Wheelchair</option>
                         <option value="Service Dog">Service Dog</option>
                         <option value="Visibility impaired">Visibility impaired</option>
@@ -224,18 +230,22 @@
                     <label>First flight</label> 
                     <input type="date" name="Date of flight A to B" value=""> 
                     <select name="DestinationA">
+                        <option value=""> -- </option>
                         <option value="BOS">Boston</option>
                         <option value="DUB">Dublin</option>
                         <option value="CPH">Copenhagen</option>
                         <option value="CDG">Paris</option>
                         <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
                     </select>
                     <select name="DestinationB">
+                        <option value=""> -- </option>
                         <option value="BOS">Boston</option>
                         <option value="DUB">Dublin</option>
                         <option value="CPH">Copenhagen</option>
                         <option value="CDG">Paris</option>
                         <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
                     </select>
                 </div>
 
@@ -243,24 +253,28 @@
                     <label>Second flight</label> 
                     <input type="date" name="Date of flight C to D" value=""> 
                     <select name="DestinationC">
+                        <option value=""> -- </option>
                         <option value="BOS">Boston</option>
                         <option value="DUB">Dublin</option>
                         <option value="CPH">Copenhagen</option>
                         <option value="CDG">Paris</option>
                         <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
                     </select>
                     <select name="DestinationD">
+                        <option value=""> -- </option>
                         <option value="BOS">Boston</option>
                         <option value="DUB">Dublin</option>
                         <option value="CPH">Copenhagen</option>
                         <option value="CDG">Paris</option>
                         <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
                     </select>
                 </div>
 
                 <div class="form-question">
                     <label>Description</label>
-                    <textarea name="Multicity or stop description" width="400" height="200" >test</textarea> <br>
+                    <textarea name="Multicity or stop description" width="400" height="200" ></textarea> <br>
                 </div>
             </fieldset>
 
@@ -289,7 +303,7 @@
                 <textarea name="Disruption Description" width="400" height="200" ></textarea>
             </fieldset>
         
-            <input type="submit" id="submitButton" value="Submit" >
+            <input type="button" id="submitButton" value="Submit" >
         </div>
         <div class="right">
             <div>

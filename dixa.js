@@ -18,7 +18,7 @@ submitButton.addEventListener("click", function() {
       // Check if the field's parent fieldset is hidden
       if (!fieldset || getComputedStyle(fieldset).display !== 'none') {
           if(`${name}` != "message" && `${name}` != "subject"  && `${name}` != "email"  && `${name}` != "name"){
-            combinedValues += `${name}: \n${value}\n\n`;
+            combinedValues += `${name}: ${value}\n\n`;
         }
       }
   }
