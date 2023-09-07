@@ -1,0 +1,176 @@
+<html>
+
+    <head>
+
+        <style>
+            @import url(dixa.css);
+            
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+
+       
+    </head>
+    <body>
+        <p><a href="dixa.html">Back</a></p>
+        <h2>Groups request</h2>
+
+    <form method="post" action="https://forms.dixa.io/v2/forms/6sPdF6kCkpHMBikHQmBaBp/7BeYEGKy69iRH2AQfWChj6" enctype="multipart/form-data" id="supportForm">
+        <div class="left">
+        
+            <label>Email</label>
+            <input type="email" name="email" value="eg@gangverk.is" required>
+            <label>Name</label>
+            <input type="text" name="name" value="einar">
+
+            <input type="hidden" name="subject" value="Group booking request">
+            
+                
+            <!--
+                Damaged baggage claim
+            -->
+            <fieldset id="group_booking">
+
+                <legend>Group booking form</legend>
+                <div class="form-question">
+                    <label>Email</label>
+                    <input type="email" name="email" value="eg@gangverk.is" required>
+                </div>
+
+                <div class="form-question">
+                    <label>Name</label>
+                    <input type="text" name="name" value="einar">
+                </div>
+
+                <div class="form-question">
+                    <label>Phone</label>
+                    <input type="text" name="phone_e164" value="+3548581884">
+                </div>
+               
+
+                <div class="form-question">
+                    <label>Where is the group flying from?</label> 
+                    <select name="FLying from">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question radio">
+                    <input type="checkbox" name="One way"><label>One way only</label>
+                </div>
+
+                <div class="form-question">
+                    <label>Where is the group flying to?</label> 
+                    <select name="FLying to">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Departure date</label> 
+                    <input type="date" name="Departure date" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival date</label> 
+                    <input type="date" name="Arrival date" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Travellers 16+</label> 
+                    <select name="Adults">
+                        <option value=""> -- </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Travellers 12-16</label> 
+                    <select name="Adults">
+                        <option value=""> -- </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Travellers 2-12</label> 
+                    <select name="Adults">
+                        <option value=""> -- </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Travellers 0-2</label> 
+                    <select name="Adults">
+                        <option value=""> -- </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Checked bag in the offer?</label>
+                    <div class="radio">
+                        <input type="radio"  name="Bag" value="Yes"/><label>Yes</label>
+                        <input type="radio"  name="Bag" value="outbound"/><label>No</label>
+                    </div>
+                </div>
+
+                <div class="form-question">
+                    <label>Comments</label><br>
+                    <textarea name="Damage bag details" width="400" height="200" ></textarea>
+                </div>
+
+            </fieldset>
+
+        
+            <input type="submit" id="submitButton" value="Submit" >
+        </div>
+        <div class="right">
+            <div>
+                
+                <textarea name="message" id="resultTextarea" class="large skip">Output</textarea>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="dixa.js">
+       
+
+    </script>
+
+    
+</body>
+</html>
