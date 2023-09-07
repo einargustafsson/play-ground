@@ -35,41 +35,46 @@
             <input type="text" name="name" value="einar">
             
                 
-            
-            <fieldset id="general_inquiry">
+            <!--
+                General inquiry
+            -->
+            <fieldset style="display: none;" id="general_inquiry">
                 <legend>General inquiry</legend>
                 <div>
-                    <label><input type="radio" id="stopover" name="type" value="online_error"/>Online Error</label>
-                    <label><input type="radio" id="multicity" name="type" value="invoice"/>Invoice</label>
+                    <label><input type="radio" name="Inquiry type" value="online_error"/>Online Error</label>
+                    <label><input type="radio"  name="Inquiry type" value="invoice"/>Invoice</label>
                 </div>
                 <div class="form-question">
-                    <label>Comments</label>
-                    <textarea name="comments" width="400" height="200" >test</textarea>
+                    <label>Comments</label><br>
+                    <textarea name="General inquiry" width="400" height="200" >test</textarea>
                 </div>
             </fieldset>
 
-            <fieldset id="cancellation_request">
+            <!--
+                Canncellation request
+            -->
+            <fieldset style="display: none;" id="cancellation_request">
                 <legend>Cancellation request</legend>
                 <blockquote>NOTE: passengers flying to the US can cancel through myplay if booking was made less than 24 hours ago</blockquote>
                 
                 <div class="form-question">
                     <label>Booking number</label> 
-                    <input type="text" name="booking_number" value="M01234"> 
+                    <input type="text" name="Booking number CR" value="M01234"> 
                 </div>
                 <div class="form-question">
                     <label>Which flight</label>
                     <div class="radio">
-                        <input type="radio"  name="type" value="inbout"/><label>Inbound</label>
-                        <input type="radio"  name="type" value="outbound"/><label>Outbound</label>
-                        <input type="radio"  name="type" value="both"/><label>Both</label>
+                        <input type="radio"  name="Direction" value="inbound"/><label>Inbound</label>
+                        <input type="radio"  name="Direction" value="outbound"/><label>Outbound</label>
+                        <input type="radio"  name="Direction" value="both"/><label>Both</label>
                     </div>
                 </div>
 
                 <div class="form-question">
                     <label>All passengers?</label>
                     <div class="radio">
-                        <input type="radio"  name="type" value="yes"/><label>yes</label>
-                        <input type="radio"  name="type" value="no"/><label>No</label>
+                        <input type="radio"  name="All passengers" value="yes"/><label>yes</label>
+                        <input type="radio"  name="All passengers" value="no"/><label>No</label>
                     </div>
                 </div>
 
@@ -80,35 +85,38 @@
 
                 <div class="form-question">
                     <label>Do you have cancel protection</label>
-                    <select name="cancel_protection">
+                    <select name="Cancel protection">
                         <option value="YES">Yes</option>
                         <option value="NO">No</option>
                     </select>
                 </div>
                 
                 <div class="form-question">
-                    <label>Is this flight to USA in less than 24 hours</label>
-                    <select name="usa_flight_24hrs">
+                    <label>Is this flight to the USA and was booked in less than 24 hours</label>
+                    <select name="USA flight less than 24hrs">
                         <option value="NO">No</option>
                         <option value="YES">Yes</option>    
                     </select>
                 </div>
 
                 <div class="form-question">
-                    <label>Comments</label>
-                    <textarea name="comments" width="400" height="200" >test</textarea>
+                    <label>Comments</label><br>
+                    <textarea name="Cancellation request" width="400" height="200" >test</textarea>
                 </div>
 
                 <div class="form-question radio">
-                    <input type="checkbox"><label>I approve all clauses</label>
+                    <input type="checkbox" name="Approve Clauses"><label>I approve all clauses</label>
                 </div>
             </fieldset>
             
-            <fieldset id="complaints">
+             <!--
+                Complaints
+            -->
+            <fieldset style="display: none;" id="complaints">
                 <legend>Complaints</legend>
                 <div class="form-question">
                     <label>Type of complaint</label>
-                    <select name="Type of assistance">
+                    <select name="Type of complaint">
                         <option value="Airport experience">Airport experience</option>
                         <option value="Baggage allowance">Baggage allowance</option>
                         <option value="Customer service">Customer service</option>
@@ -121,16 +129,55 @@
 
                 <div class="form-question">
                     <label>Booking number</label> 
+                    <input type="text" name="Booking Number C" value="M01234"> 
+                </div>
+
+                <div class="form-question">
+                    <label>Comments</label><br>
+                    <textarea name="Complaint" width="400" height="200" >test</textarea>
+                </div>
+            </fieldset>
+
+            <!--
+                Changes to booking
+            -->
+            <fieldset style="display: none;" id="changes_to_booking">
+                <legend>Changes to booking</legend>
+                <div class="form-question">
+                    <label>Type of change</label>
+                    <select name="Type of change">
+                        <option value="Passenger details">Passenger details</option>
+                        <option value="Passenger change">Passenger change</option>
+                        <option value="Add passenger">Add passenger</option>
+                        <option value="Date of flight">Date of flight</option>
+                        <option value="Destination of flight">Destination of flight</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Booking number</label> 
                     <input type="text" name="booking_number" value="M01234"> 
+                </div>
+
+                <label>Phone</label>
+            <input type="text" name="phone_e164" value="+3548581884">
+
+                <div class="form-question">
+                    <label>Date of flight</label> 
+                    <input type="date" name="Change date" value=""> 
                 </div>
 
                 <div class="form-question">
                     <label>Comments</label>
-                    <textarea name="comments" width="400" height="200" >test</textarea>
+                    <textarea name="Change description" width="400" height="200" >test</textarea>
                 </div>
+
             </fieldset>
 
-            <fieldset id="assistance">
+             <!--
+                Assistance
+            -->
+            <fieldset style="display: none;" id="assistance">
                 <legend>Assistance</legend>
                 <div class="form-question">
                     <label>Type of assistance</label>
@@ -147,35 +194,35 @@
 
                 <div class="form-question">
                     <label>Booking number</label> 
-                    <input type="text" name="booking_number" value="M01234"> 
+                    <input type="text" name="Booking number A" value="M01234"> 
                 </div>
-
-                <label>Phone</label>
-            <input type="text" name="phone_e164" value="+3548581884">
 
                 <div class="form-question">
                     <label>Date of flight</label> 
-                    <input type="date" name="date" value=""> 
+                    <input type="date" name="Date of assistance" value=""> 
                 </div>
 
                 <div class="form-question">
                     <label>Comments</label>
-                    <textarea name="comments" width="400" height="200" >test</textarea>
+                    <textarea name="Assistance description" width="400" height="200" ></textarea>
                 </div>
 
             </fieldset>
 
-            <fieldset id="multicity_stopover">
+             <!--
+                Multicity and stopover
+            -->
+            <fieldset style="display: none;" id="multicy_stopover">
                 <legend>Multicity & Stopover</legend>
 
                 <div class="form-question">
-                    <input type="radio" id="stopover" name="type" value="stopover"/>Stopover
-                    <input type="radio" id="multicity" name="type" value="multicity"/>Multicity
+                    <input type="radio" id="stopover" name="Type of flight" value="stopover"/>Stopover
+                    <input type="radio" id="multicity" name="Type of flight" value="multicity"/>Multicity
                 </div>
 
                 <div class="form-question">
                     <label>First flight</label> 
-                    <input type="date" name="date" value=""> 
+                    <input type="date" name="Date of flight A to B" value=""> 
                     <select name="DestinationA">
                         <option value="BOS">Boston</option>
                         <option value="DUB">Dublin</option>
@@ -194,7 +241,7 @@
 
                 <div class="form-question">
                     <label>Second flight</label> 
-                    <input type="date" name="date" value=""> 
+                    <input type="date" name="Date of flight C to D" value=""> 
                     <select name="DestinationC">
                         <option value="BOS">Boston</option>
                         <option value="DUB">Dublin</option>
@@ -213,37 +260,42 @@
 
                 <div class="form-question">
                     <label>Description</label>
-                    <textarea name="description" width="400" height="200" >test</textarea> <br>
+                    <textarea name="Multicity or stop description" width="400" height="200" >test</textarea> <br>
                 </div>
             </fieldset>
 
-            <fieldset id="flight-disruptions">
+             <!--
+                Flight disruptions
+            -->
+            <fieldset style="display: none;" id="flight-disruptions">
                 <legend>Flight disruptions</legend>
                 <div>
-                    <input type="radio" name="type" value="online_error"/>Online Error
-                    <input type="radio" name="type" value="invoice"/>Invoice
+                    <input type="radio" name="Type of disruption" value="Change dates"/>Change dates
+                    <input type="radio" name="Type of disruption" value="Refund me"/>refund
                 </div>
                 <div class="form-question">
                     <label>Booking number</label> 
-                    <input type="text" name="booking_number" value="M01234"> 
+                    <input type="text" name="Booking Number FD" value="M01234"> 
                 </div>
                 <div class="form-question">
                     <label>Which flight</label>
                     <div class="radio">
-                        <input type="radio"  name="type" value="inbout"/><label>Inbound</label>
-                        <input type="radio"  name="type" value="outbound"/><label>Outbound</label>
-                        <input type="radio"  name="type" value="both"/><label>Both</label>
+                        <input type="radio"  name="Disrupted flight" value="inbout"/><label>Inbound</label>
+                        <input type="radio"  name="Disrupted flight" value="outbound"/><label>Outbound</label>
+                        <input type="radio"  name="Disrupted flight" value="both"/><label>Both</label>
                     </div>
                 </div>
                 <label>Description</label>
-                <textarea name="description" width="400" height="200" >test</textarea>
+                <textarea name="Disruption Description" width="400" height="200" ></textarea>
             </fieldset>
         
             <input type="submit" id="submitButton" value="Submit" >
         </div>
         <div class="right">
-            Output
-            <textarea name="message" id="resultTextarea" class="large skip"></textarea>
+            <div>
+                
+                <textarea name="message" id="resultTextarea" class="large skip">Output</textarea>
+            </div>
         </div>
     </form>
 

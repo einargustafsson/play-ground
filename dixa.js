@@ -10,12 +10,25 @@ submitButton.addEventListener("click", function() {
     let combinedValues = "";
 
     // Iterate through the FormData object
+
+    for (const [name, value] of formData) {
+      const field = form.querySelector(`[name="${name}"]`);
+      const fieldset = field.closest('fieldset');
+
+      // Check if the field's parent fieldset is hidden
+      if (!fieldset || getComputedStyle(fieldset).display !== 'none') {
+          if(`${name}` != "message" && `${name}` != "subject"  && `${name}` != "email"  && `${name}` != "name"){
+            combinedValues += `${name}: \n${value}\n\n`;
+        }
+      }
+  }
+  /*
     for (const [name, value] of formData) {
         if(`${name}` != "message" && `${name}` != "subject"  && `${name}` != "email"  && `${name}` != "name"){
             combinedValues += `${name}: ${value}\n\n`;
         }
     }
-
+    */
     // Set the combined values in the textarea
     textarea.value = combinedValues;
    });
