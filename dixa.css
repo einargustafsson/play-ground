@@ -1,7 +1,15 @@
+body {padding: 10px; font-family: helvetica; font-size:0.9em;}
 select, textarea, input {border: 1px solid black; margin-bottom: 20px; border-radius: 5px; height: 30px; padding: 5px;}
 textarea {width: 400px; height: 100px;}
 a {color: black; padding: 10px; display: block;}
-label {margin-bottom:0px; display: block;}
+
 .hidden {display:none;}
 textarea.large {height: 500;}
 form {display: flex;}
+fieldset {margin-bottom: 40px; }
+select, input[type="text"], input[type="email"] {display: block;}
+.form-question {padding: 20px 0 10px 0; border-top: 1px solid #ccc}
+
+label {margin-bottom:10px; display: inline-block; font-size: 0.9em }
+.radio label { margin-top: 10px; display: inline-block; margin-right: 20px;}
+.radio {display: flex;}
