@@ -9,15 +9,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
 
-        <script>
-        $(document).ready(function(){
-            $('#subject').on('change', function(){
-                var demovalue = $(this).val(); 
-                $("fieldset").hide();
-                $("#"+demovalue).show();
-            });
-        });
-        </script> 
        
     </head>
     <body>
@@ -42,8 +33,7 @@
             <input type="email" name="email" value="eg@gangverk.is" required>
             <label>Name</label>
             <input type="text" name="name" value="einar">
-            <label>Phone</label>
-            <input type="text" name="phone_e164" value="+3548581884">
+            
                 
             
             <fieldset id="general_inquiry">
@@ -160,6 +150,9 @@
                     <input type="text" name="booking_number" value="M01234"> 
                 </div>
 
+                <label>Phone</label>
+            <input type="text" name="phone_e164" value="+3548581884">
+
                 <div class="form-question">
                     <label>Date of flight</label> 
                     <input type="date" name="date" value=""> 
@@ -245,16 +238,11 @@
                 <label>Description</label>
                 <textarea name="description" width="400" height="200" >test</textarea>
             </fieldset>
-
-
-
-            
-            
         
             <input type="submit" id="submitButton" value="Submit" >
         </div>
         <div class="right">
-            <label>Message</label>
+            Output
             <textarea name="message" id="resultTextarea" class="large skip"></textarea>
         </div>
     </form>

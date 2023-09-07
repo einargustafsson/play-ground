@@ -43,3 +43,10 @@ submitButton.addEventListener("click", function() {
 })(window, document);
 _dixa_.invoke('init', { messengerToken: '36ec56fce8394e9dbc347d025a621bc5' });
 
+$(document).ready(function(){
+  $('#subject').on('change', function(){
+      var demovalue = $(this).val(); 
+      $("fieldset").hide();
+      $("#"+demovalue).show();
+  });
+});
