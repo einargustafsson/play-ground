@@ -1,0 +1,312 @@
+<html>
+
+    <head>
+
+        <style>
+            @import url(dixa.css);
+            
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+
+       
+    </head>
+    <body>
+        <p><a href="dixa.html">Back</a></p>
+        <h2>Claims request</h2>
+
+    <form method="post" action="https://forms.dixa.io/v2/forms/6sPdF6kCkpHMBikHQmBaBp/7BeYEGKy69iRH2AQfWChj6" enctype="multipart/form-data" id="supportForm">
+        <div class="left">
+            <label>Request type</label>
+            <select name="subject" id="subject">
+                <option value="">--- select ---</option>
+                <option value="damaged_baggage_claim">Damaged baggage claim</option>
+                <option value="delayed_baggage_claim">Delayed baggage claim</option>
+                <option value="delayed_cancelled_flights">Delayed / cancelled flight or denied boarding</option>
+                <option value="bag_not_shown_5_days">My bag hasn't shown up for more than 5 days</option>
+            </select> <br>
+
+            <label>Email</label>
+            <input type="email" name="email" value="eg@gangverk.is" required>
+            <label>Name</label>
+            <input type="text" name="name" value="einar">
+            
+                
+            <!--
+                Damaged baggage claim
+            -->
+            <fieldset style="display: none;" id="damaged_baggage_claim">
+                <legend>Damaged baggage claim</legend>
+                
+                <div class="form-question">
+                    <label>Booking number</label> 
+                    <input type="text" name="Booking number DBC" value="M01234"> 
+                </div>
+
+                <div class="form-question">
+                    <label>Name of passenger that is connected to the damaged baggage</label> 
+                    <input type="text" name="Name of passenger" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival airport where claim was made</label> 
+                    <select name="Arrival airport">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival date</label> 
+                    <input type="date" name="Arrival date" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Damaged baggage number (worldtracer)</label> 
+                    <input type="text" name="Damaged baggage number" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>How old is the bag</label> 
+                    <input type="text" name="Age of bag" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Comments</label><br>
+                    <textarea name="Damage bag details" width="400" height="200" ></textarea>
+                </div>
+
+                <label>Attache photo of bag</label>
+                <input type="file" name="attachments"> <br>
+            </fieldset>
+
+             <!--
+                Delayed baggage claim
+            -->
+            <fieldset style="display: none;" id="delayed_baggage_claim">
+                <legend>Delayed baggage claim</legend>
+                
+                <div class="form-question">
+                    <label>Booking number</label> 
+                    <input type="text" name="Booking number DBC" value="M01234"> 
+                </div>
+
+                <div class="form-question">
+                    <label>Name of passenger that is connected to the damaged baggage</label> 
+                    <input type="text" name="Name of passenger" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Departure airport where claim was made</label> 
+                    <select name="Departure airport">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival airport where claim was made</label> 
+                    <select name="Arrival airport">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival date</label> 
+                    <input type="date" name="Arrival date" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Damaged baggage number (worldtracer)</label> 
+                    <input type="text" name="Damaged baggage number" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Days without bag                
+                    </label> 
+                    <input type="text" name="Days without bag" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Claim amount</label> 
+                    <input type="text" name="Claim amount" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Comments</label><br>
+                    <textarea name="Delayed bag details" width="400" height="200" ></textarea>
+                </div>
+            </fieldset>
+
+            <!--
+                Delayed or cancelled flight
+            -->
+            <fieldset style="display: none;" id="delayed_cancelled_flights">
+                <legend>Delayed / cancelled flight or denied boarding</legend>
+                
+                
+                <div class="form-question">
+                    <label>Type of claim</label>
+                    <select name="Cancel protection">
+                        <option value=""> -- </option>
+                        <option value="Delayed flight - disruption to my flight within 24 hours of departure">Delayed flight - disruption to my flight within 24 hours of departure</option>
+                        <option value="Cancelled flight - disruption to my flight within 24 hours of departure">Cancelled flight - disruption to my flight within 24 hours of departure</option>
+                        <option value="Flight changed/cancelled with more than 7 days to departure">Flight changed/cancelled with more than 7 days to departure</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Booking number</label> 
+                    <input type="text" name="Booking number DCF" value="M01234"> 
+                </div>
+
+                <div class="form-question">
+                    <label>Email on booking</label>
+                    <input type="email" name="email_on_booking" value=""> <br>
+                </div>
+
+                <div class="form-question">
+                    <label>Your full name and childrens names</label><br>
+                    <textarea name="Your name and children" width="400" height="200" ></textarea>
+                </div>
+
+                <div class="form-question">
+                    <label>Affected arrival airport</label> 
+                    <select name="Affected arrival airport">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Affected flight number</label> 
+                    <input type="text" name="Affected flight number" value="OG123"> 
+                </div>
+
+                <div class="form-question">
+                    <label>Date of departure</label> 
+                    <input type="date" name="Date of departure" value=""> 
+                </div>
+
+
+                <div class="form-question">
+                    <label>Comments</label><br>
+                    <textarea name="Cancellation request" width="400" height="200" ></textarea>
+                </div>
+
+            </fieldset>
+
+             <!--
+                Bag hasn't shown up for 5 days
+            -->
+            <fieldset style="display: none;" id="bag_not_shown_5_days">
+                <legend>Bag hasn't shown up for 5 days</legend>
+                
+                <div class="form-question">
+                    <label>Booking number</label> 
+                    <input type="text" name="Booking number DBC" value="M01234"> 
+                </div>
+
+                <div class="form-question">
+                    <label>Name of passenger that is connected to the damaged baggage</label> 
+                    <input type="text" name="Name of passenger" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Departure airport where claim was made</label> 
+                    <select name="Departure airport">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival airport where claim was made</label> 
+                    <select name="Arrival airport">
+                        <option value=""> -- </option>
+                        <option value="BOS">Boston</option>
+                        <option value="DUB">Dublin</option>
+                        <option value="CPH">Copenhagen</option>
+                        <option value="CDG">Paris</option>
+                        <option value="BRS">Barcelona</option>
+                        <option value="JFK">New York</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <label>Arrival date</label> 
+                    <input type="date" name="Arrival date" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Damaged baggage number (worldtracer)</label> 
+                    <input type="text" name="Damaged baggage number" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Days without bag                
+                    </label> 
+                    <input type="text" name="Days without bag" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Claim amount</label> 
+                    <input type="text" name="Claim amount" value=""> 
+                </div>
+
+                <div class="form-question">
+                    <label>Bag contents</label><br>
+                    <textarea name="Bag contents" width="400" height="200" ></textarea>
+                </div>
+
+                <div class="form-question">
+                    <label>Comments</label><br>
+                    <textarea name="Missing bag details" width="400" height="200" ></textarea>
+                </div>
+            </fieldset>
+            
+        
+            <input type="submit" id="submitButton" value="Submit" >
+        </div>
+        <div class="right">
+            <div>
+                
+                <textarea name="message" id="resultTextarea" class="large skip">Output</textarea>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="dixa.js">
+       
+
+    </script>
+
+    
+</body>
+</html>
