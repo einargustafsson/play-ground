@@ -6,7 +6,7 @@ a {color: black; padding: 10px; display: block;}
 .hidden {display:none;}
 textarea.large {height: 500;}
 form {display: flex;}
-fieldset {margin-bottom: 40px; }
+fieldset {margin-bottom: 40px; display:none; }
 select, input[type="text"], input[type="email"] {display: block;}
 .form-question {padding: 20px 0 10px 0; border-top: 1px solid #ccc}
 
