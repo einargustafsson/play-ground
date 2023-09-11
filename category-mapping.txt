@@ -1,10 +1,20 @@
 
 
 Claims
-    Damaged baggage claim
-    Delayed baggage claim
-    Flight claims regarding delayed/cancelled flight/denied boarding
-    My bag hasn't shown up for more than 5 days
+    Damaged baggage claim * Fínt eins og er
+    Delayed baggage claim * Fínt eins og er
+    Denied boarding / overbooking
+        ~ departure airport
+    Flight claims regarding delayed/cancelled flight
+        ~ departure airport (set up as que)
+    Claims company - filter by sender address
+    VIP - manual
+    payment error - manual
+    schedule changes - manual    
+    
+
+Baggage tracing  - orðalag?
+    - My bag hasn't shown up for more than 5 days
     
 Service
 
