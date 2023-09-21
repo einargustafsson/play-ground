@@ -1,16 +1,16 @@
 
 
 Claims
-    Damaged baggage claim * Fínt eins og er
-    Delayed baggage claim * Fínt eins og er
-    Denied boarding / overbooking
+    X Damaged baggage claim * Fínt eins og er
+    X Delayed baggage claim * Fínt eins og er
+    X Denied boarding / overbooking
         ~ departure airport
     Flight claims regarding delayed/cancelled flight
         ~ departure airport (set up as que)
-    Claims company - filter by sender address
-    VIP - manual
-    payment error - manual
-    schedule changes - manual    
+    X Claims company - filter by sender address
+    X VIP - manual
+    X payment error - manual
+    X schedule changes - manual    
     
 
 Baggage tracing  - orðalag?
