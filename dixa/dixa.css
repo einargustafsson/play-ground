@@ -14,4 +14,3 @@ select, input[type="text"], input[type="email"] {display: block;}
 label {margin-bottom:10px; display: inline-block; font-size: 0.9em }
 .radio label { margin-top: 10px; display: inline-block; margin-right: 20px;}
 .radio {display: flex;}
-.hide {visibility: hidden;}
